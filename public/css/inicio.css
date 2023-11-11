@@ -1,0 +1,151 @@
+main{
+    width: 86%;
+    height: 100vh;
+    background-color: rgb(246, 246, 246);
+}
+#btn-controladores{
+    width: 100%;
+    height: 15vh;
+}
+#container-principal{
+    width: 90%;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 2px gray;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#container-tarefas{
+    width: 100%;
+    height: 85%;
+    /* background-color: pink; */
+}
+#container-principal button{
+    width: 20%;
+    margin: auto;
+    background-color: #4786e0;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+/* MODAL */
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Estilo do botão de fechar */
+  .close:hover {
+    color: #f00;
+  }
+
+  .form-check{
+    margin-left: 20%;
+  }
+  #btn-form-tarefa{
+    border-radius: 5px;
+    background-color: #4786e0;
+    color: white;
+    border: none;
+    height: 40px;
+  }
+
+  #container-tarefas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+  }
+
+  .container-tarefa-categoria{
+    width: 24%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .titulo-categoria{
+    font-size: 5;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+  }
+
+  .item-lista{
+    width: 90%;
+    min-height: 30px;
+    /* height: 25px; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(218, 218, 218);
+    margin: auto;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .item-lista:hover{
+    cursor: pointer;
+    border: 1px solid rgb(212, 212, 212);
+  }
+
+  .tag-categorias{
+    width: 100%;
+    font-size: 12px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag-categorias p{
+    margin-right: 5px ;
+    /* background-color: #4786e0; */
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /* style="background-color: ; width: 100%; font-size:12px; margin-top:5px; display:flex; flex-wrap:wrap;" */
+  .tagProfissional{
+    background-color: #f00;
+  }
+  .tagViagens{
+    background-color: #4786e0;
+  }
+  .tagPessoal{
+    background-color: rgb(164, 93, 0) ;
+  }
+  .tagAcademico{
+    background-color: rgb(97, 0, 112);
+  }
